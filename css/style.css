@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --wh: #fff;
+    --brown: #0b1926;
+    --blight:#00eaff;
+    --bdark:#014ba0;
+    --yel1:#ffd500;
+    --yel2:#ffc000;
+    --black: #000000;
+}
+
+body{
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 1px;
+}
+
+a{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--brown);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--blight);
+}
+
+section img{
+    width: 100%;
+}
+
+p{
+    font-size: 700;
+    font-weight: 700;
+}
+section{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: var(--brown);
+}
+
+#hero{
+    background-image: url("../img/fondherotrasl.svg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+}
+
+#hero h1{
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+.overlay{
+    position: relative;
+    z-index: 2;
+}
+
+.overlay::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--bdark);
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    font-style: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary{
+    background-color: var(--bdark);
+    border-radius: 100px;
+    overflow: hidden;
+    transition: .25s;
+    border: 2px solid var(--bdark);
+    
+}
+.btn-primary:hover{
+    background-color: var(--blight);
+    border-color: var(--blight);
+    border-radius: 110px;
+    box-shadow: 0 0 10px var(--blight), 0 0 50px var(--blight), 0 0 100px var(--blight), 0 0 200px var(--blight);
+}
+
+.navbar{
+    transition: all 0.4s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: var(--wh);
+}
+
+.navbar-dark .navbar-nav .nav-link.active{
+    color: var(--blight);
+}
+
+.intro{
+    margin-bottom: 3.125rem;
+}
+
+.intro .divider{
+    background-color: var(--bdark);
+    height: .125rem;
+    width: 7.5rem;
+    margin: 1.5rem auto;
+}
+
+.icon-box{
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--blight);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin: 0 auto 1.5rem auto;
+    color: var(--wh);
+    flex: none;
+}
+
+.icon-box i{
+    font-size: 2rem;
+
+}
+
+#milestone{
+    background-image: url("../img/nw.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+}
+
+.counter .number{
+    line-height: 1;
+}
+
+.counter .divider{
+    width: 2.5rem;
+    height: .125rem;
+    background-color: var(--blight);
+    margin: 1rem auto;
+}
+
+.project{
+    position: relative;
+    overflow: hidden;
+}
+
+.project-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bdark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    color: var(--wh);
+    text-align: center;
+    opacity: 0;
+    transform: scale(0);
+    transition: all .4s ease;
+}
+
+.project:hover .project-info{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.service-box {
+    display: flex;
+}
+
+#reviews {
+    background-image: url("../img/nw.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.review{
+    max-width: 50rem;
+    margin: auto;
+}
+
+.review .quote{
+    font-size: 2rem;
+    color: var(--blight);
+}
+
+#cta{
+    background-image: url("../img/nw.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+footer a {
+    color: var(--wh);
+    margin-left: .5rem;
+}
