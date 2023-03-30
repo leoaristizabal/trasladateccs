@@ -98,7 +98,6 @@ section{
     border-radius: 100px;
     overflow: hidden;
     transition: .25s;
-    border: 2px solid var(--bdark);
     
 }
 .btn-primary:hover{
@@ -125,7 +124,7 @@ section{
 }
 
 .intro .divider{
-    background-color: var(--bdark);
+    background-color: var(--blight);
     height: .125rem;
     width: 7.5rem;
     margin: 1.5rem auto;
@@ -150,7 +149,7 @@ section{
 }
 
 #milestone{
-    background-image: url("../img/nw.jpg");
+    background-image: url("../img/fondherotrasl.svg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -201,9 +200,10 @@ section{
 }
 
 #reviews {
-    background-image: url("../img/nw.jpg");
+    background-image: url("../img/fondherotrasl.svg");
     background-position: center;
     background-size: cover;
+    opacity: 0.4;
 }
 
 .review{
@@ -217,9 +217,10 @@ section{
 }
 
 #cta{
-    background-image: url("../img/nw.jpg");
+    background-image: url("../img/fondherotrasl.svg");
     background-position: center;
     background-size: cover;
+    opacity: 0.4;
 }
 
 footer a {
