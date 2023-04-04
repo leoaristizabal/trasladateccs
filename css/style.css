@@ -14,6 +14,7 @@
     --yel1:#ffd500;
     --yel2:#ffc000;
     --black: #000000;
+    --wapp: #0a8035;
 }
 
 body{
@@ -60,7 +61,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 #hero h1{
@@ -98,6 +99,7 @@ section{
     border-radius: 100px;
     overflow: hidden;
     transition: .25s;
+    color: #fff;
     
 }
 .btn-primary:hover{
@@ -203,7 +205,7 @@ section{
     background-image: url("../img/fondherotrasl.svg");
     background-position: center;
     background-size: cover;
-    opacity: 0.4;
+    z-index: 2;
 }
 
 .review{
@@ -213,14 +215,15 @@ section{
 
 .review .quote{
     font-size: 2rem;
-    color: var(--blight);
+    color: var(--bdark);
 }
 
 #cta{
     background-image: url("../img/fondherotrasl.svg");
     background-position: center;
     background-size: cover;
-    opacity: 0.4;
+    position: relative;
+    z-index: 2;
 }
 
 footer a {
