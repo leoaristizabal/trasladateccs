@@ -95,19 +95,22 @@ section{
 }
 
 .btn-primary{
-    background-color: var(--bdark);
+    background-color: var(--blight);
+    border-color: var(--blight);
     border-radius: 100px;
     overflow: hidden;
     transition: .25s;
     color: #fff;
-    
+    box-shadow: 0 0 5px var(--blight), 0 0 25px var(--blight), 0 0 50px var(--blight), 0 0 100px var(--blight), 0 0 200px var(--blight);
 }
+
 .btn-primary:hover{
     background-color: var(--blight);
     border-color: var(--blight);
     border-radius: 110px;
-    box-shadow: 0 0 10px var(--blight), 0 0 50px var(--blight), 0 0 100px var(--blight), 0 0 200px var(--blight);
+    box-shadow: 0 0 20px var(--blight), 0 0 100px var(--blight), 0 0 200px var(--blight), 0 0 400px var(--blight);
 }
+
 
 .navbar{
     transition: all 0.4s ease;
@@ -159,7 +162,8 @@ section{
 }
 
 .counter .number{
-    line-height: 1;
+    line-height: 0.5;
+    font-size: 2.5rem;
 }
 
 .counter .divider{
@@ -224,9 +228,24 @@ section{
     background-size: cover;
     position: relative;
     z-index: 2;
+    opacity: 0.8;
 }
 
 footer a {
     color: var(--wh);
     margin-left: .5rem;
+}
+
+.btn-whatsapp i {
+    margin-right: .5rem;
+    font-size: 1.25rem;
+}
+
+#cta h2 {
+    margin-right: 0.1rem;
+    color: var(--black);
+}
+
+#cta .btn-whatsapp {
+    margin-top: 0.5rem;
 }
