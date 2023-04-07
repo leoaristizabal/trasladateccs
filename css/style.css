@@ -11,10 +11,7 @@
     --brown: #0b1926;
     --blight:#00eaff;
     --bdark:#014ba0;
-    --yel1:#ffd500;
-    --yel2:#ffc000;
     --black: #000000;
-    --wapp: #0a8035;
 }
 
 body{
@@ -184,7 +181,7 @@ section{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--bdark);
+    background: linear-gradient(to bottom,var(--bdark),var(--blight));
     display: flex;
     align-items: center;
     justify-content: center;
