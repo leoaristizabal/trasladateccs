@@ -16,17 +16,16 @@
 
 body{
     font-family: 'Amatic SC', sans-serif;
-    font-weight: 700;
 }
 
 h1,h2,h3,h4,h5,h6{
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 1px;
+    margin-top: 3px;
 }
 
 a{
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     color: var(--brown);
     text-decoration: none;
@@ -115,10 +114,12 @@ section{
 
 .navbar-dark .navbar-nav .nav-link{
     color: var(--wh);
+    font-size: large;
 }
 
 .navbar-dark .navbar-nav .nav-link.active{
     color: var(--blight);
+    font-size: larger;
 }
 
 .intro{
@@ -257,8 +258,8 @@ footer a {
 }
 
 .share-button {
-    width: 8rem;
-    height: 5rem;
+    width: 9rem;
+    height: 5.25rem;
     background: var(--blight);
     color: var(--wh);
     border-radius: 100px;
@@ -274,8 +275,8 @@ footer a {
 .share-button:hover{
     transform: scale(1.1);
     box-shadow: 0 0 10px var(--blight), 0 0 50px var(--blight), 0 0 100px var(--blight), 0 0 200px var(--blight);
-    width: 4rem;
-    height: 8rem;
+    width: 5rem;
+    height: 12.25rem;
     transition: 0.5s ease-in-out;
 }
 
@@ -301,7 +302,7 @@ footer a {
 
 .share-button a {
     flex: 1;
-    font-size: 1.25rem;
+    font-size: 2.5rem;
     text-align: center;
     transform: translateX(-100%);
     opacity: 0;
@@ -323,4 +324,9 @@ footer a {
 }
 .share-button a:nth-of-type(3){
     transition-delay: 0.3s;
+}
+
+.plarge{
+    font-size: larger;
+    font-weight: 700;
 }
