@@ -97,7 +97,6 @@ section{
     overflow: hidden;
     transition: .25s;
     color: #fff;
-    box-shadow: 0 0 5px var(--blight), 0 0 25px var(--blight), 0 0 50px var(--blight), 0 0 100px var(--blight), 0 0 200px var(--blight);
 }
 
 .btn-primary:hover{
@@ -330,3 +329,18 @@ footer a {
     font-size: larger;
     font-weight: 700;
 }
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7.5%;
+  }
+  
+  .modal-body img {
+    max-width: 100%;
+    max-height: 100vh;
+  }
+  
+
+
