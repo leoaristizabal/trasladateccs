@@ -34,3 +34,9 @@ $('.blog-slider').owlCarousel({
         }
     }
 })
+
+//Imagen Pop-Up
+
+document.getElementById("close-popup").addEventListener("click", "keydown", function() {
+    document.getElementById("popup-container").style.display = "none";
+});
