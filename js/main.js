@@ -1,3 +1,4 @@
+/*
 $(window).scroll(function(){
 
     if($(window).scrollTop() > 0){
@@ -40,3 +41,4 @@ $('.blog-slider').owlCarousel({
 document.getElementById("close-popup").addEventListener("click", "keydown", function() {
     document.getElementById("popup-container").style.display = "none";
 });
+*/
