@@ -1,4 +1,10 @@
-/*
+// Obtén una referencia al elemento principal de tu página, por ejemplo, el <body>
+var body = document.getElementsByTagName("body")[0];
+
+// Cambia el estilo CSS para hacer que la página sea invisible
+body.style.visibility = "hidden";
+
+
 $(window).scroll(function(){
 
     if($(window).scrollTop() > 0){
@@ -41,4 +47,3 @@ $('.blog-slider').owlCarousel({
 document.getElementById("close-popup").addEventListener("click", "keydown", function() {
     document.getElementById("popup-container").style.display = "none";
 });
-*/
