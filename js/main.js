@@ -2,7 +2,7 @@
 var body = document.getElementsByTagName("body")[0];
 
 // Cambia el estilo CSS para hacer que la página sea invisible
-body.style.visibility = "hidden";
+//body.style.visibility = "hidden";
 
 
 $(window).scroll(function(){
